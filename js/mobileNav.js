@@ -1,6 +1,6 @@
 const hamburgerBtn = document.getElementById("hamburgerBtn");
 const mobileMenu = document.getElementById("mobileMenu");
-const hamburgerIcon = document.getElementById("iconhamburger");
+const hamburgerIcon = document.getElementById("iconHamburger");
 const closeIcon = document.getElementById("iconClose");
 
 let isOpen = false;
@@ -18,12 +18,12 @@ hamburgerBtn.addEventListener("click", () => {
         document.body.style.overflow = "hidden";
 
     } else {
-        mobileMenu.remove("translate-x-0");
+        mobileMenu.classList.remove("translate-x-0")
         mobileMenu.classList.add("translate-x-full");
 
         hamburgerIcon.classList.remove("hidden");
         closeIcon.classList.add("hidden");
 
-        document.body.style.overflow = "hidden";
+        document.body.style.overflow = "auto";
     }
     })
